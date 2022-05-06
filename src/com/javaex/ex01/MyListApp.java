@@ -3,7 +3,6 @@ package com.javaex.ex01;
 public class MyListApp {
 
 	public static void main(String[] args) {
-
 		/*
 		Point[] pArray = new Point[100];	//배열의 갯수를 정해야 한다.
 		
@@ -46,30 +45,25 @@ public class MyListApp {
 			System.out.println(pList.get(i).toString());
 		}
 		
-		/////////////////////////////////////////
-		//Circle 관리
+		CircleList cArray = new CircleList();
 		
+		Circle c01 = new Circle(3);
+		Circle c02 = new Circle(5);
+		Circle c03 = new Circle(7);
 		
-		CircleList cList = new CircleList(); 
+		cArray.add(c01);
+		cArray.add(c02);
+		cArray.add(c03);
 		
-		Circle c01 = new Circle(5);
-		Circle c02 = new Circle(15);
+		System.out.println(cArray.size());
+		System.out.println(cArray.get(1).getRadius());
 		
-		cList.add(c01);
-		cList.add(c02);
-		
-		//Circle 개수
-		System.out.println("size :" + cList.size());
-		
-		//[1]방의 반지름
-		Circle c = cList.get(0);
-		System.out.println(c.getRadius());
-		
-		//전체출력tosTring();
-		for(int i = 0; i < cList.size(); i++) {
-			System.out.println(cList.get(i).toString());
+		for(int i=0; i<cArray.size(); i++) {
+			System.out.println(cArray.get(i).toString());
 		}
 		
+		
+		
+		
 	}
-
 }

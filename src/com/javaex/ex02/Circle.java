@@ -2,7 +2,6 @@ package com.javaex.ex02;
 
 public class Circle {
 
-	
 	//필드
 	private int radius;
 	
@@ -31,9 +30,6 @@ public class Circle {
 	public String toString() {
 		return "Circle [radius=" + radius + "]";
 	}
-	
-	
-	
 	
 	
 	

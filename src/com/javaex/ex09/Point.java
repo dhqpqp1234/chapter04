@@ -1,4 +1,4 @@
-package com.javaex.ex02;
+package com.javaex.ex09;
 
 public class Point {
 
@@ -42,6 +42,7 @@ public class Point {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 	
+
 	
 	
 	
